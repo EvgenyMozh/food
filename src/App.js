@@ -16,10 +16,10 @@ import { Recipe } from "./pages/Recipe";
 function App() {
   return (
     <>
-      <Router >
+      <Router>
         <Header />
         <main className="container content">
-          <Routes basename="/react-food">
+          <Routes path="/food">
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contact />} />
