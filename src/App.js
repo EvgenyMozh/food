@@ -16,7 +16,7 @@ import { Recipe } from "./pages/Recipe";
 function App() {
   return (
     <>
-      <HashRouter>
+      <Router>
         <Header />
         <main className="container content">
           <Routes>
@@ -29,7 +29,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
-      </HashRouter>
+      </Router>
     </>
   );
 }
