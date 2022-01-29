@@ -16,10 +16,10 @@ import { Recipe } from "./pages/Recipe";
 function App() {
   return (
     <>
-      <HashRouter>
+      <HashRouterstatus>
         <Header />
         <main className="container content">
-          <Routes path="/food">
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contact />} />
@@ -29,7 +29,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
-      </HashRouter>
+      </HashRouterstatus>
     </>
   );
 }
