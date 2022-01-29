@@ -1,6 +1,6 @@
 import {
-  BrowserRouter,
   BrowserRouter as Router,
+  HashRouter,
   Route,
   Routes,
 } from "react-router-dom";
@@ -16,7 +16,7 @@ import { Recipe } from "./pages/Recipe";
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
         <Header />
         <main className="container content">
           <Routes path="/food">
@@ -29,7 +29,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
-      </Router>
+      </HashRouter>
     </>
   );
 }
