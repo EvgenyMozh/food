@@ -1,4 +1,5 @@
 import {
+  BrowserRouter,
   BrowserRouter as Router,
   HashRouter,
   Route,
@@ -16,10 +17,10 @@ import { Recipe } from "./pages/Recipe";
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter hashType='noslash' >
         <Header />
         <main className="container content">
-          <Routes>
+          <Routes basename="/food">
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contact />} />
@@ -29,7 +30,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
-      </Router>
+      </HashRouter>
     </>
   );
 }
